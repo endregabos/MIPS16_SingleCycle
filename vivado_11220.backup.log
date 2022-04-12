@@ -1,0 +1,412 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr  5 18:35:40 2021
+# Process ID: 11220
+# Current directory: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13260 E:\Automatica si Calculatoare\Cod Lab AC\MIPS_16\test_env\test_env.xpr
+# Log file: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/vivado.log
+# Journal file: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+close [ open {E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd} w ]
+add_files {{E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd}}
+update_compile_order -fileset sources_1
+set_property top UnitateExecutie [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr  5 20:02:21 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Apr  5 20:03:07 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: UnitateExecutie
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1221.551 ; gain = 181.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UnitateExecutie' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd:50]
+WARNING: [Synth 8-614] signal 'iesireMux' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd:85]
+WARNING: [Synth 8-614] signal 'iesireMux' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd:93]
+WARNING: [Synth 8-614] signal 'shiftL' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd:101]
+WARNING: [Synth 8-614] signal 'shiftR' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd:101]
+WARNING: [Synth 8-614] signal 'iesireAlu' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'UnitateExecutie' (1#1) [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/UnitateExecutie.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1259.355 ; gain = 219.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1259.355 ; gain = 219.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1259.355 ; gain = 219.004
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[4]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[4]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[5]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[5]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[6]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[6]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1364.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1409.691 ; gain = 369.340
+6 Infos, 103 Warnings, 98 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1409.691 ; gain = 537.500
+set_property top test_env [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr  5 21:12:25 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Apr  5 21:16:07 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Apr  5 21:17:02 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+[Mon Apr  5 21:19:27 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+close [ open {E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/MemorieDate.vhd} w ]
+add_files {{E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/MemorieDate.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Apr  5 22:28:18 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Apr  5 22:32:08 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Apr  5 22:33:05 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  5 23:08:56 2021...

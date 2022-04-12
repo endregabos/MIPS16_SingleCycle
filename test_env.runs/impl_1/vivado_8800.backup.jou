@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 13 20:52:23 2021
+# Process ID: 8800
+# Current directory: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1
+# Command line: vivado.exe -log test_env.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test_env.tcl -notrace
+# Log file: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/test_env.vdi
+# Journal file: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source test_env.tcl -notrace

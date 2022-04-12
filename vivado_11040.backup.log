@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 29 18:23:09 2021
+# Process ID: 11040
+# Current directory: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20308 E:\Automatica si Calculatoare\Cod Lab AC\MIPS_16\test_env\test_env.xpr
+# Log file: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/vivado.log
+# Journal file: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+close [ open {E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/RegFile.vhd} w ]
+add_files {{E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/RegFile.vhd}}
+update_compile_order -fileset sources_1
+set_property top RegFile [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+set_property top test_env [current_fileset]
+update_compile_order -fileset sources_1
+set_property top RegFile [current_fileset]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 18:53:43 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 29 18:54:45 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+close [ open {E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstrDecode.vhd} w ]
+add_files {{E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstrDecode.vhd}}
+update_compile_order -fileset sources_1
+set_property top test_env [current_fileset]
+update_compile_order -fileset sources_1
+set_property top InstrDecode [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 19:52:50 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 29 19:56:03 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 20:02:36 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 29 20:03:22 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 20:08:13 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 29 20:09:16 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+set_property top test_env [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top InstrDecode [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 20:20:52 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 29 20:21:26 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+set_property top test_env [current_fileset]
+update_compile_order -fileset sources_1
+set_property top InstrDecode [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 20:29:44 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 29 20:30:17 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+set_property top test_env [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 21:51:18 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 21:54:39 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 29 21:55:18 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 29 21:56:11 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 29 21:58:46 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+[Mon Mar 29 21:58:46 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+set_property top InstrDecode [current_fileset]
+update_compile_order -fileset sources_1
+set_property top test_env [current_fileset]
+update_compile_order -fileset sources_1
+close [ open {E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/MainControl.vhd} w ]
+add_files {{E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/MainControl.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 23:29:50 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 29 23:30:25 2021] Launched synth_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Mar 29 23:30:58 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 29 23:32:18 2021] Launched impl_1...
+Run output will be captured here: E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: test_env
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1902.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:45]
+INFO: [Synth 8-3491] module 'MPG_lab1' declared at 'E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/MPG_lab1.vhd:36' bound to instance 'MPG_1' of component 'MPG_lab1' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'MPG_lab1' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/MPG_lab1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'MPG_lab1' (1#1) [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/MPG_lab1.vhd:42]
+INFO: [Synth 8-3491] module 'MPG_lab1' declared at 'E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/MPG_lab1.vhd:36' bound to instance 'MPG_2' of component 'MPG_lab1' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:134]
+INFO: [Synth 8-3491] module 'InstructionFetch' declared at 'E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstructionFetch.vhd:36' bound to instance 'InstrFetch' of component 'InstructionFetch' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetch' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstructionFetch.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetch' (2#1) [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstructionFetch.vhd:48]
+INFO: [Synth 8-3491] module 'InstrDecode' declared at 'E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstrDecode.vhd:36' bound to instance 'Instr_Decode' of component 'InstrDecode' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'InstrDecode' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstrDecode.vhd:51]
+WARNING: [Synth 8-614] signal 'instruction' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstrDecode.vhd:69]
+WARNING: [Synth 8-614] signal 'instruction' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstrDecode.vhd:78]
+INFO: [Synth 8-3491] module 'RegFile' declared at 'E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/RegFile.vhd:36' bound to instance 'RegFilePort' of component 'RegFile' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstrDecode.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/RegFile.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (3#1) [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/RegFile.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'InstrDecode' (4#1) [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/InstrDecode.vhd:51]
+INFO: [Synth 8-3491] module 'MainControl' declared at 'E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/MainControl.vhd:36' bound to instance 'UnitateConstrol' of component 'MainControl' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'MainControl' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/MainControl.vhd:50]
+INFO: [Synth 8-226] default block is never used [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/MainControl.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'MainControl' (5#1) [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/MainControl.vhd:50]
+WARNING: [Synth 8-614] signal 'Instruction' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:140]
+WARNING: [Synth 8-614] signal 'PCinc' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:140]
+WARNING: [Synth 8-614] signal 'rd1' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:140]
+WARNING: [Synth 8-614] signal 'rd2' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:140]
+WARNING: [Synth 8-614] signal 'ExtImm' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:140]
+WARNING: [Synth 8-614] signal 'wd' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:140]
+INFO: [Synth 8-3491] module 'SSD' declared at 'E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:36' bound to instance 'Afisare' of component 'SSD' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'SSD' [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:43]
+WARNING: [Synth 8-614] signal 'sel_temp' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:56]
+WARNING: [Synth 8-614] signal 'Digit' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:56]
+WARNING: [Synth 8-614] signal 'sel_temp' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:66]
+INFO: [Synth 8-226] default block is never used [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:78]
+WARNING: [Synth 8-614] signal 'sgn_cat' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:76]
+WARNING: [Synth 8-614] signal 'sgn_an' is read in the process but is not in the sensitivity list [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (6#1) [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/imports/new/SSD.vhd:43]
+WARNING: [Synth 8-3848] Net led in module/entity test_env does not have driver. [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (7#1) [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/sources_1/new/test_env.vhd:45]
+WARNING: [Synth 8-3331] design RegFile has unconnected port writeEn
+WARNING: [Synth 8-3331] design InstrDecode has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design InstrDecode has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design InstrDecode has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[7]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[6]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[5]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[0]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[7]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[6]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[5]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1902.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1902.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1902.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc]
+Finished Parsing XDC File [E:/Automatica si Calculatoare/Cod Lab AC/MIPS_16/test_env/test_env.srcs/constrs_1/imports/MIPS_16/Basys3_test_env.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1902.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1902.109 ; gain = 0.000
+27 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1902.109 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 29 23:37:31 2021...
